@@ -10,7 +10,7 @@ export default function Footer(props) {
 			<div className={styles.flowers}></div>
 			<div className={styles.inside}>
 				<Typography className={styles.left}>$CHUNK@2024</Typography>
-				<div className={styles.right}>
+				{/* <div className={styles.right}>
 					<a
 						href="https://google.com"
 						target="_blank"
@@ -25,7 +25,7 @@ export default function Footer(props) {
 					>
 						Privacy Policy
 					</a>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

@@ -20,7 +20,7 @@ export default function ChunkIt(props) {
 			<div className={styles.socials}>
 				<a
 					className={styles.oneSocial}
-					href="https://google.com"
+					href="https://twitter.com/ChunkOnSolana"
 					target="_blank"
 				>
 					<Image
@@ -33,7 +33,7 @@ export default function ChunkIt(props) {
 				</a>
 				<a
 					className={styles.oneSocial}
-					href="https://google.com"
+					href="https://t.me/ChunkOnSolana"
 					target="_blank"
 				>
 					<Image
