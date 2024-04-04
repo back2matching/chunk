@@ -9,7 +9,10 @@ export default function Footer(props) {
 		<div className={styles.section}>
 			<div className={styles.flowers}></div>
 			<div className={styles.inside}>
-				<Typography className={styles.left}>$CHUNK@2024</Typography>
+				<Typography className={styles.left}>
+					$CHUNK: A playful shitcoin adventure. No real value, just
+					pure groundhog chaos. Dig in at your own risk!
+				</Typography>
 				{/* <div className={styles.right}>
 					<a
 						href="https://google.com"
