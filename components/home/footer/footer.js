@@ -10,7 +10,7 @@ export default function Footer(props) {
 			<div className={styles.flowers}></div>
 			<div className={styles.inside}>
 				<Typography className={styles.left}>
-					$CHUNK: A playful shitcoin adventure. No real value, just
+					$CHUNK: A playful memecoin adventure. No real value, just
 					pure groundhog chaos. Dig in at your own risk!
 				</Typography>
 				{/* <div className={styles.right}>
