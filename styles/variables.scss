@@ -1,0 +1,17 @@
+// filters: https://angel-rs.github.io/css-color-filter-generator/
+$color-black: #000;
+$color-white: #fff;
+$color-white-filter: brightness(0) invert(1);
+
+$color-brown: #78320f;
+$color-yellow: #ffc700;
+$color-bg: #ffe89c;
+
+$color-scroll: $color-brown;
+$color-background-primary: $color-bg;
+$color-text-primary: $color-white;
+
+$font1: 'Titan One';
+$font2: 'Signika';
+$animation1: 0.3s;
+$animation2: 1s;

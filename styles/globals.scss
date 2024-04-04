@@ -1,0 +1,147 @@
+@import './variables.scss';
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	overflow-x: clip;
+}
+
+body {
+	background: $color-background-primary;
+}
+
+.base {
+	background: $color-background-primary;
+	color: $color-text-primary;
+	font-family: $font1;
+	overflow: clip;
+	min-width: 100vw;
+}
+
+a {
+	text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.image {
+	position: relative;
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+}
+
+.imageCover {
+	position: relative;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+.imageFill {
+	position: relative;
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 65654px;
+	background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 65654px;
+	background-color: $color-scroll;
+}
+
+::selection {
+	color: #fff;
+	background: rgba($color-scroll, 0.6);
+}
+
+img::selection {
+	background: #ffffff00;
+}
+
+.pageLoader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: $color-background-primary;
+	z-index: 15;
+
+	opacity: 1;
+	pointer-events: auto;
+	transition: opacity 0.7s;
+}
+
+.loader {
+	position: fixed;
+	width: 389px;
+	height: 95px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.normal {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+
+	background: url('../public/loader.png');
+	background-size: cover;
+
+	opacity: 0.3;
+	mix-blend-mode: luminosity;
+}
+
+.fill {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 0%;
+	height: 100%;
+
+	background: url('../public/loader.png');
+	background-size: cover;
+
+	transition: width 2.5s;
+}
+
+.fill[data-loading='true'] {
+	width: 100%;
+}
+
+.pageLoader[data-visible='false'] {
+	opacity: 0;
+	pointer-events: none;
+}
+
+// RWD
+@media (max-width: 1110px) {
+}
